@@ -6,9 +6,10 @@ package model;
 
 public interface Motor {
 
-String getTipoMotor();
+    String getTipoMotor();
 
-int getPotencia(); // em cavalos (cv)
+    int getPotencia(); // em cavalos (cv)
 
-void exibirEspecificacoes();
+    void exibirEspecificacoes();
+
 }
