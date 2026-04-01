@@ -1,16 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author suporte
- */
 public class SemContratosFactory extends Factory {
 
     @Override
     Car retrieveCar(String requestedGrade) {
-        return null;
+        switch (requestedGrade) {
+            case "A":
+                return new Car(120, "gasolina", "cinza");  // econômico premium
+            case "B":
+                return new Car(100, "gasolina", "preto");  // econômico
+            default:
+                return new Car(100, "gasolina", "preto");  // econômico
+        }
     }
 }

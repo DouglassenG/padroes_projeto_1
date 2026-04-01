@@ -1,16 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author suporte
- */
 public class ContratosFactory extends Factory {
 
     @Override
     Car retrieveCar(String requestedGrade) {
-        return null;
+        switch (requestedGrade) {
+            case "A":
+                return new Car(300, "eletrico", "vermelho");   // premium
+            case "B":
+                return new Car(200, "gasolina", "azul");       // padrão
+            default:
+                return new Car(150, "gasolina", "branco");     // básico
+        }
     }
 }
