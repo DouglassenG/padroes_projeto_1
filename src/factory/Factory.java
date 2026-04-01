@@ -17,7 +17,7 @@ public abstract class Factory {
     private Car prepareCar(Car car) {
         car.clean();
         car.mechanicCheck();
-        car.fuelUp();
+        car.fuelCar();
         return car;
     }
     abstract Car retrieveCar(String requestedGrade);
